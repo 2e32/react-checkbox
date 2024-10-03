@@ -1,0 +1,97 @@
+.e-checkbox {
+  --label-offset: 8px;
+
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.e-checkbox--disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
+.e-checkbox--block {
+  display: flex;
+  width: 100%;
+}
+
+.e-checkbox--orientation-left {
+  flex-direction: row;
+}
+
+.e-checkbox--orientation-right {
+  flex-direction: row-reverse;
+}
+
+.e-checkbox--orientation-top {
+  flex-direction: column;
+}
+
+.e-checkbox--orientation-bottom {
+  flex-direction: column-reverse;
+}
+
+.e-checkbox__box {
+  display: inline-flex;
+  color: #666;
+}
+
+.e-checkbox__box--checked {
+  color: #1976d2;
+}
+
+.e-checkbox__box--disabled {
+  color: #bdbdbd;
+}
+
+.e-checkbox__box--readonly {
+  opacity: 0.6;
+}
+
+.e-checkbox__box--position-left {
+  margin-right: var(--label-offset);
+}
+
+.e-checkbox__box--position-right {
+  margin-left: var(--label-offset);
+}
+
+.e-checkbox__box--position-top {
+  margin-bottom: var(--label-offset);
+}
+
+.e-checkbox__box--position-bottom {
+  margin-top: var(--label-offset);
+}
+
+.e-checkbox__box--align-start {
+  align-self: flex-start;
+}
+
+.e-checkbox__box--align-center {
+  align-self: center;
+}
+
+.e-checkbox__box--align-end {
+  align-self: flex-end;
+}
+
+.e-checkbox__icon {
+  height: 24px;
+  width: 24px;
+  fill: currentColor;
+}
+
+.e-checkbox__label {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.e-checkbox__input {
+  /* Не используйте display: none, т.к. input перестанет обрабатывать focus, blur */
+  width: 0;
+  height: 0;
+  margin: 0;
+  opacity: 0;
+}
