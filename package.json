@@ -13,7 +13,10 @@
     "react-checkbox"
   ],
   "author": "konstantin_b",
-  "repository": "https://github.com/2e32/react-checkbox.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2e32/react-checkbox.git"
+  },
   "license": "MIT",
   "files": [
     "dist"
