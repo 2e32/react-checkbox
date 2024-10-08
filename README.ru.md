@@ -1,5 +1,7 @@
 # @2e32/react-checkbox
 
+[English (en)](README.md)
+
 React checkbox.
 
 ## Установка

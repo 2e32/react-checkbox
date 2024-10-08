@@ -1,5 +1,7 @@
 # @2e32/react-checkbox
 
+[Русский (ru)](README.ru.md)
+
 React checkbox.
 
 ## How install
