@@ -34,10 +34,24 @@ export default App;
 Page.js
 
 ```javascript
+import { useState, useCallback } from 'react';
+// Import the component
 import Checkbox from '@2e32/react-checkbox';
 
 const Page = () => {
-  return <Checkbox />;
+  const [checked, setChecked] = useState(false);
+
+  const handleChange = useCallback((newChecked) => {
+    setChecked(newChecked);
+
+    if (newChecked) console.log(`Changed to ${newChecked}`);
+  }, []);
+
+  return (
+    <Checkbox checked={checked} onChange={handleChange}>
+      Label
+    </Checkbox>
+  );
 };
 
 export default Page;
