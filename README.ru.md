@@ -170,7 +170,6 @@ export default Page;
       <td></td>
       <td>Содержимое связанное с галочкой (текстовая подпись).</td>
     </tr>
-    </tr>
     <tr>
       <td>className</td>
       <td>
@@ -178,7 +177,6 @@ export default Page;
       </td>
       <td></td>
       <td>CSS-класс.</td>
-    </tr>
     </tr>
     <tr>
       <td>style</td>
@@ -188,7 +186,6 @@ export default Page;
       <td></td>
       <td>Стиль.</td>
     </tr>
-    </tr>
     <tr>
       <td>boxClassName</td>
       <td>
@@ -197,7 +194,6 @@ export default Page;
       <td></td>
       <td>CSS-класс контейнера, в котором располагается галочка.</td>
     </tr>
-    </tr>
     <tr>
       <td>labelClassName</td>
       <td>
@@ -205,7 +201,6 @@ export default Page;
       </td>
       <td></td>
       <td>CSS-класс контейнера, в котором располагается текст.</td>
-    </tr>
     </tr>
     <tr>
       <td>checkmarkPosition</td>
@@ -219,7 +214,6 @@ export default Page;
         Позиция отображения галочки относительно контента чекбокса.
       </td>
     </tr>
-    </tr>
     <tr>
       <td>checkmarkAlign</td>
       <td>
@@ -229,7 +223,6 @@ export default Page;
         <code>'center'</code>
       </td>
       <td>Выравнивание галочки относительно контента чекбокса.</td>
-    </tr>
     </tr>
     <tr>
       <td>disabled</td>
@@ -241,7 +234,6 @@ export default Page;
       </td>
       <td>Компонент отключен (состояние галочки не может быть изменено, получение фокуса запрещено).</td>
     </tr>
-    </tr>
     <tr>
       <td>readOnly</td>
       <td>
@@ -251,7 +243,6 @@ export default Page;
         <code>false</code>
       </td>
       <td>Компонент только на чтение (состояние галочки не может быть изменено).</td>
-    </tr>
     </tr>
     <tr>
       <td>autoFocus</td>
@@ -263,7 +254,6 @@ export default Page;
       </td>
       <td>Компонент должен находится в фокусе при монтировании.</td>
     </tr>
-    </tr>
     <tr>
       <td>block</td>
       <td>
@@ -274,7 +264,6 @@ export default Page;
       </td>
       <td>Компонент занимает всю ширину контейнера.</td>
     </tr>
-    </tr>
     <tr>
       <td>tabIndex</td>
       <td>
@@ -284,7 +273,6 @@ export default Page;
         <code>0</code>
       </td>
       <td>Значение для настройки фокуса элемента.</td>
-    </tr>
     </tr>
     <tr>
       <td>renderIcon</td>
@@ -302,7 +290,6 @@ export default Page;
         <code> (props: RenderIconProps) => React.ReactNode</code>
       </td>
     </tr>
-    </tr>
     <tr>
       <td>onChange</td>
       <td>
@@ -313,7 +300,7 @@ export default Page;
         Вызывается при переключении значения.
         <br />
         <br />
-        <code>(checked: T, e: React.ChangeEvent<HTMLInputElement>) => void</code>
+        <code>(checked: T, e: React.ChangeEvent&lt;HTMLInputElement&gt;) => void</code>
       </td>
     </tr>
   </tbody>
