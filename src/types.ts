@@ -11,7 +11,7 @@ interface RenderIconProps {
   disabled: boolean;
   readOnly: boolean;
 }
-//
+
 /**
  * Свойства и методы переключателя.
  */
