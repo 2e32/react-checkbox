@@ -101,7 +101,7 @@ interface CheckboxProps<T = boolean> {
   checkmarkPosition?: CheckmarkPosition;
   /**
    * Выравнивание галочки относительно контента чекбокса.
-   * @default top
+   * @default center
    */
   checkmarkAlign?: CheckmarkAlign;
   /**
@@ -140,7 +140,6 @@ interface CheckboxProps<T = boolean> {
   /**
    * Вызывается при переключении значения.
    */
-
   onChange?: (checked: T, e: React.ChangeEvent<HTMLInputElement>) => void;
 
   // Стандартные обработчики событий
