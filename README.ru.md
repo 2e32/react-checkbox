@@ -2,7 +2,7 @@
 
 [English (en)](README.md)
 
-React checkbox.
+React галочка.
 
 ## Установка
 
