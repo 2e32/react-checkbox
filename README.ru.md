@@ -6,6 +6,14 @@ React галочка.
 
 ## Установка
 
+npm
+
+```bash
+npm i @2e32/react-checkbox
+```
+
+yarn
+
 ```bash
 yarn add @2e32/react-checkbox
 ```
