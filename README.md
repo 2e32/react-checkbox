@@ -53,7 +53,7 @@ export default Page;
         <code>string</code>
       </td>
       <td></td>
-      <td></td>
+      <td>The id of the input.</td>
     </tr>
     <tr>
       <td>name</td>
@@ -61,7 +61,7 @@ export default Page;
         <code>string</code>
       </td>
       <td></td>
-      <td></td>
+      <td>The name of the input.</td>
     </tr>
     <tr>
       <td>value</td>
@@ -69,7 +69,7 @@ export default Page;
         <code>string | number | readonly string[]</code>
       </td>
       <td></td>
-      <td></td>
+      <td>The value of the input.</td>
     </tr>
     <tr>
       <td>ref</td>
@@ -77,7 +77,7 @@ export default Page;
         <code>React.Ref&lt;HTMLLabelElement&gt;</code>
       </td>
       <td></td>
-      <td></td>
+      <td>Ref to the root element.</td>
     </tr>
     <tr>
       <td>checked</td>
@@ -85,7 +85,12 @@ export default Page;
         <code>T = boolean</code>
       </td>
       <td></td>
-      <td></td>
+      <td>
+        If <code>true</code>, the component is checked.
+        <br />
+        <br />
+        ⚠️ Use when the component is controlled.
+      </td>
     </tr>
     <tr>
       <td>defaultChecked</td>
@@ -95,7 +100,12 @@ export default Page;
       <td>
         <code>false</code>
       </td>
-      <td></td>
+      <td>
+        The default checked state.
+        <br />
+        <br />
+        ⚠️ Use when the component is not controlled.
+      </td>
     </tr>
     <tr>
       <td>indeterminate</td>
@@ -105,7 +115,7 @@ export default Page;
       <td>
         <code>false</code>
       </td>
-      <td></td>
+      <td>If <code>true</code>, the component appears indeterminate.</td>
     </tr>
     <tr>
       <td>checkedValue</td>
@@ -115,7 +125,7 @@ export default Page;
       <td>
         <code>true</code>
       </td>
-      <td></td>
+      <td>The value of the true state.</td>
     </tr>
     <tr>
       <td>uncheckedValue</td>
@@ -125,7 +135,7 @@ export default Page;
       <td>
         <code>false</code>
       </td>
-      <td></td>
+      <td>The value of the false state.</td>
     </tr>
     <tr>
       <td>isValueChecked</td>
@@ -133,7 +143,8 @@ export default Page;
         <code>function</code>
       </td>
       <td></td>
-      <td></td>
+      <td>Compare <code>checked</code> and <code>checkedValue</code>. Returns <code>true</code> if values are
+        equivalent, <code>false</code> otherwise.</td>
     </tr>
     <tr>
       <td>children</td>
@@ -141,8 +152,7 @@ export default Page;
         <code>React.ReactNode</code>
       </td>
       <td></td>
-      <td></td>
-    </tr>
+      <td>The content associated with the checkbox.</td>
     </tr>
     <tr>
       <td>className</td>
@@ -150,8 +160,7 @@ export default Page;
         <code>string</code>
       </td>
       <td></td>
-      <td></td>
-    </tr>
+      <td>The class applied to the root element.</td>
     </tr>
     <tr>
       <td>style</td>
@@ -159,7 +168,7 @@ export default Page;
         <code>React.CSSProperties</code>
       </td>
       <td></td>
-      <td></td>
+      <td>The style applied to the root element.</td>
     </tr>
     </tr>
     <tr>
@@ -168,7 +177,7 @@ export default Page;
         <code>string</code>
       </td>
       <td></td>
-      <td></td>
+      <td>The class applied to the checkmark container.</td>
     </tr>
     </tr>
     <tr>
@@ -177,7 +186,7 @@ export default Page;
         <code>string</code>
       </td>
       <td></td>
-      <td></td>
+      <td>The class applied to the content container.</td>
     </tr>
     </tr>
     <tr>
@@ -188,7 +197,7 @@ export default Page;
       <td>
         <code>'left'</code>
       </td>
-      <td></td>
+      <td>Checkmark placement.</td>
     </tr>
     </tr>
     <tr>
@@ -199,7 +208,7 @@ export default Page;
       <td>
         <code>'center'</code>
       </td>
-      <td></td>
+      <td>Checkmark align.</td>
     </tr>
     </tr>
     <tr>
@@ -210,7 +219,7 @@ export default Page;
       <td>
         <code>false</code>
       </td>
-      <td></td>
+      <td>If true, the component is disabled (<code>checked</code> cannot be changed).</td>
     </tr>
     </tr>
     <tr>
@@ -221,7 +230,7 @@ export default Page;
       <td>
         <code>false</code>
       </td>
-      <td></td>
+      <td>If true, the component is readonly (<code>checked</code> cannot be changed).</td>
     </tr>
     </tr>
     <tr>
@@ -232,7 +241,7 @@ export default Page;
       <td>
         <code>false</code>
       </td>
-      <td></td>
+      <td>Gets focus when the component is mounted.</td>
     </tr>
     </tr>
     <tr>
@@ -243,7 +252,7 @@ export default Page;
       <td>
         <code>false</code>
       </td>
-      <td></td>
+      <td>Expands the component to 100% of available space.</td>
     </tr>
     </tr>
     <tr>
@@ -254,7 +263,7 @@ export default Page;
       <td>
         <code>0</code>
       </td>
-      <td></td>
+      <td>The tabindex of the input.</td>
     </tr>
     </tr>
     <tr>
@@ -263,7 +272,7 @@ export default Page;
         <code>function</code>
       </td>
       <td></td>
-      <td></td>
+      <td>Render checkbox icon.</td>
     </tr>
     </tr>
     <tr>
@@ -272,7 +281,7 @@ export default Page;
         <code>function</code>
       </td>
       <td></td>
-      <td></td>
+      <td>Callback fired when the checked state is changed by user.</td>
     </tr>
   </tbody>
 </table>
